@@ -67,6 +67,8 @@ Add current directory (and all its subdirectories) or file(s) to staging area.
 * `$ git commit` / `$ git commit -m "message"`  
 Commit files in staging area with message  
 If `-m` is ommited, will be brought to [default git editor (nano/vim)](#Using-git-editornanovim-when-committing-without--m) to enter multi-line commmit message, a format of `$ git commit -m "Head message" -m "Description"` can also be used instead  
+* `$ git commit -am "message"`  
+Add and commit all modified files with message in one command   
 * `$ git pull` / `$ git pull origin master`  
 Pull changes from current working branch or master branch of remote 'origin'  
 *`$ git pull -u origin master` may be required for pulling for the first time to associate local branch with remote branch*    
