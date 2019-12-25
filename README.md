@@ -8,8 +8,8 @@
 **[Commonly Used Commands for Fixing Mistakes](#Commonly-Used-Commands-for-Fixing-Mistakes)**  
 **[Common Workflow with Branches](#Common-Workflow-with-Branches)**  
 **[Restoring Deleted Commits](#Restoring-Deleted-Commits)**  
-**[Contributing to Open Source Projects](#Contributing-to-Open-Source-Projects)**  
-**[Accessing Manual Page in Git](#Manual-Page)**  
+**[Contributing to Open Source Projects on GitHub](#Contributing-to-Open-Source-Projects)**  
+**[Accessing Manual Page for Commands](#Manual-Page)**  
 **[The .gitignore File](#gitignore)**  
 
 <br>
