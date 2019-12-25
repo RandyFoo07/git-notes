@@ -32,7 +32,7 @@ Paste copied output into key field -> Add SSH key
 Verify SSH key with Github (if prompted, type `yes`)  
 * `$ git config --list`  
 To check current configuration  
-* `ls ~/.ssh/id_rsa.pub`
+* `ls ~/.ssh/id_rsa.pub`  
 To check if any SSH key is installed  
 
 <br>
@@ -48,7 +48,8 @@ Add current directory (and all its subdirectories) to staging area
 Commit files in staging area with included message    
 4. Create a repository (on Github)  
 5. `$ git remote add origin [url copied from Github]`  
-Add a remote branch to the local repository (Origin can be replaced with any name)
+Create a new remote named origin located at url (Origin can be replaced with any name)
+*Push/Pull commands can be used with origin now instead of typing out the url*
 6. `$ git push -u origin master`  
 Push changes to remote repository  
 #### Cloning
@@ -196,7 +197,8 @@ Create a backup branch containing deleted commit
 Go to the master branch or any branch intended for the commit to be copied to  
 5. `$ git cherry-pick [commit hash]`  
 Copy the deleted commit to current branch  
-6. Delete backup branch (follow steps 10 & 11 from [Common Workflow with Branches](#Common-Workflow-with-Branches))  
+6. Delete backup branch  
+*Follow steps 10 & 11 from [Common Workflow with Branches](#Common-Workflow-with-Branches))*   
 
 <br>
 <br>
@@ -212,7 +214,7 @@ Add the original repository as an additional remote alongside the forked reposit
 Pull changes from the original repsository to the local cloned repository  
 5. `$ git push origin master`  
 Push changes to the master branch of the forked repository  
-6. Click **Pull Request** button in the forked repository to request changes to be pulled into original repository  
+6. Click **Pull Request** button in the forked repository to request changes to be pulled into the original repository  
 
 <br>
 <br>
@@ -226,6 +228,6 @@ Push changes to the master branch of the forked repository
 
 ## .gitignore
 For excluding files from Version Control
-1. Create a file name `.gitignore` in current directory
+1. Create a file named `.gitignore` in current directory
 2. Enter the name of any files to be excluded from tracking in `.gitignore`
 * `*.html` will ignore all files with html extension
