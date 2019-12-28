@@ -9,6 +9,7 @@
 **[Common Workflow with Branches](#Common-Workflow-with-Branches)**  
 **[Restoring Deleted Commits](#Restoring-Deleted-Commits)**  
 **[Contributing to Open Source Projects on GitHub](#Contributing-to-Open-Source-Projects)**  
+**[Creating a Private Forked Repository](#Creating-a-Private-Forked-Repository)**  
 **[Accessing Manual Page for Commands](#Manual-Page)**  
 **[The .gitignore File](#gitignore)**  
 
@@ -207,10 +208,10 @@ Copy the deleted commit to current branch
 <br>
 
 ## Contributing to Open Source Projects
-1. Fork the Project repository(from GitHub)  
+1. Fork the Project repository (from GitHub)  
 2. `$ git clone [forkedRepository]`  
 Clone the forked version of the project repository  
-3. `$ git remote add upstream [urlofOriginalRepository]`  
+3. `$ git remote add upstream [urlOfOriginalRepository]`  
 Add the original repository as an additional remote alongside the forked repository  
 4. `Add` and `Commit` changes to the cloned repository  
 4. `$ git pull upstream master`  
@@ -218,6 +219,28 @@ Pull changes from the original repsository to the local cloned repository
 5. `$ git push origin master`  
 Push changes to the master branch of the forked repository  
 6. Click **Pull Request** button in the forked repository to request changes to be pulled into the original repository  
+
+<br>
+<br>
+
+## Creating a Private Forked Repository
+1. `$ git clone --bare [urlOfOrignalRepository]`  
+Create a temporary clone of the repository  
+2. Create a private repository (on Github)  
+3. `cd [directoryOfClonedRepository]`  
+Change directory to previously cloned directory  
+4. `$ git push --mirror [urlOfPrivateRepository]`  
+Push to newly created private respository using its url  
+5. `cd ..` `rm -rf [clonedRepository]`  
+Remove the temporary clone  
+6. `$ git clone [urlOfPrivateRepository]`
+Clone the private repository  
+7. `$ git remote add upstream [urlOfOriginalRepository]`  
+Set the original repository as a upstream remote to pull any future changes to the private repository  
+*To pull in future changes, use the command `$ git pull upstream [branch]`*  
+8. `$ git remote set-url --push upstream DISABLE`  
+Disable pushing to the original repository  
+*Instead, push to the private repository which has the remote name of "origin" by default by using `$ git push origin [branch]`*  
 
 <br>
 <br>
