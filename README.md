@@ -141,7 +141,7 @@ Reset to a commit, and remove all changes made before except untracked files
 Remove any changes to all files or file(s) not in staging area, back to as it is from last commit  
 * `$ git reset` / `$ git reset [file1] [file2]`  
 Unstage all files or file(s) selected in the working directory  
-* `$ git commit --ammend -m "Correct message"`  
+* `$ git commit --amend -m "Correct message"`  
 Replace the last commit (only commits that has not been pushed), including a corrected message if necessary  
 *If a file is added after a commit, using the above command will add the file along with the corrected commit message to replace the last commit. This is used if a file intended for a commit was not added*  
 * `$ git cherry-pick [hash of commit to copy]`  
