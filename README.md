@@ -85,6 +85,8 @@ Show changes made to local repository
 Show all commits or commits with detailed changes made in current branch  
 * `$ git remote -v`  
 List information on remote repository  
+* `$ git remote rename [name1] [name2]`  
+Rename remotes named 'name1' to 'name2'  
 * `$ git remote set-url origin [url] / $ git remote set-url upstream [url]`  
 Replace existing remote repository to new remote repository  
 * `$ git branch` / `$ git branch -a`  
