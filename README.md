@@ -1,7 +1,7 @@
 # Notes on Git
 
 _omit `[]`, include `""` when using this sheet, [file1] -> "test.txt"_  
-_use [imperative mood](#https://en.wikipedia.org/wiki/Imperative_mood) for commit messages_
+_use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) for commit messages_
 
 # Table of Contents
 
